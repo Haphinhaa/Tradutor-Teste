@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Tradutor Dev</title>
+</head>
+<body>
+    <div class="caixa-maior">
+        <textarea class="input-texto" placeholder="Digite seu texto aqui..."></textarea>
+        
+        <div class="controle">
+            <select class="idioma-origem">
+                <option value="pt-BR">Português</option>
+                <option value="en">Inglês</option>
+                <option value="es">Espanhol</option>
+                <option value="fr">Francês</option>
+                <option value="de">Alemão</option>
+            </select>
+
+            <select class="idioma-destino">
+                <option value="en">Inglês</option>
+                <option value="pt-BR">Português</option>
+                <option value="ja">Japonês</option>
+                <option value="fr">Francês</option>
+                <option value="de">Alemão</option>
+            </select>
+
+            <button onclick="traduzir()" title="Traduzir">
+                <img src="material de apoio/traduzir.svg" alt="Traduzir">
+            </button>
+
+            <button onclick="ouvirMicrofone()" id="btn-microfone" title="Ouvir">
+                <img src="material de apoio/microfone.svg" alt="Microfone">
+            </button>
+
+            <button onclick="falarTexto()" title="Ouvir Tradução">
+                <img src="material de apoio/ouvir.png" alt="Alto-falante" class="icon-white">
+            </button>
+
+            <button onclick="copiarTexto()" title="Copiar Tradução">
+                <img src="material de apoio/copiar-texto.png" alt="Copiar" class="icon-white">
+            </button>
+        </div>
+
+        <div class="resultado">
+            <h3 class="titulo-tradução">Tradução</h3>
+            <p class="tradução">A tradução aparecerá aqui</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
